@@ -47,7 +47,7 @@ export default function About() {
       {/* Text Section */}
       <div className="flex flex-col w-full sm:w-[60%] gap-2 h-auto sm:h-full  p-1 sm:p-4 rounded-2xl shadow-md">
         <p className="text-[#11DAD1] font-bold tracking-widest flex justify-center sm:justify-start">ABOUT ME</p>
-        <h1 className="text-4xl sm:text-4xl text-white font-extrabold flex justify-center sm:justify-start mb-2">
+        <h1 className="text-3xl sm:text-4xl text-white font-extrabold flex justify-center sm:justify-start mb-2">
           WHO AM I?
         </h1>
 
