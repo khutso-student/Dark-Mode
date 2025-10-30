@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 
 import About from "./About";
 import Skills from './Skills';
+import Projects from './Projects'
 import YearCard from "../component/YearCard";
 import Marquee from '../component/Marquee';
 import Status from '../component/Status';
@@ -24,7 +25,7 @@ export default function Main() {
 
   // Button style
   const navButtonClass = (isActive) => `
-    cursor-pointer transition-all duration-300 text-2xl
+    cursor-pointer transition-all duration-300 text-xl sm:text-2xl
     ${isActive ? "text-[#11DAD1] scale-110" : "text-[#fff] hover:text-[#11DAD1]"}
   `;
 
@@ -62,8 +63,8 @@ export default function Main() {
         style={{ backgroundImage: `url(${background})` }}
       >
         {/* Navigation Bar */}
-        <div className="fixed top-4 flex justify-center items-center w-full mb-2">
-          <div className="flex justify-center items-center z-50 gap-5 w-70 sm:w-90 h-13 rounded-full bg-[#8686861e] border border-[#BDBDBD] backdrop-blur-md">
+        <div className="fixed top-4 flex justify-center z-100 items-center w-[90%] sm:w-1/2 mb-2">
+          <div className="flex justify-center items-center  gap-4 p-4 sm:gap-5 w-full sm:w-90 h-13 rounded-full bg-[#8686861e] border border-[#BDBDBD] backdrop-blur-md">
             <button
               onClick={() => handleClick("#home")}
               className={navButtonClass(active === "#home")}
@@ -159,6 +160,9 @@ export default function Main() {
 
       <div id="skills" className="w-full h-auto mb-5">
         <Skills />
+      </div>
+      <div id="projects" className="w-full h-auto ">
+        <Projects />
       </div>
     </main>
   );
