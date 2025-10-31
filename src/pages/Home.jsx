@@ -5,12 +5,15 @@ import { motion, useAnimation } from "framer-motion";
 import About from "./About";
 import Skills from './Skills';
 import Projects from './Projects'
+import Contact from './Contact';
 import YearCard from "../component/YearCard";
 import Marquee from '../component/Marquee';
 import Status from '../component/Status';
+import WorkCarousel from '../component/WorkCarousel';
 
 import background from "../assets/background.png";
 import PROFILE from "../assets/PROFILE.png";
+import ArtImage from '../assets/ArtImage.png'
 
 import { GoHome } from "react-icons/go";
 import { FaRegCircleUser } from "react-icons/fa6";
@@ -163,6 +166,25 @@ export default function Main() {
       </div>
       <div id="projects" className="w-full h-auto ">
         <Projects />
+      </div>
+
+      <div className="flex justify-center items-center w-full h-auto  p-2 sm:p-5 mt-5">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-[90%] h-150 bg-[#0E0E10] border border-[#868686] rounded-xl p-2 sm:p-3">
+                <div className="flex justify-center items-center w-full h-full border rounded-xl border-[#868686]"
+                style={{ backgroundImage: `url(${ArtImage})` }}>
+                    <WorkCarousel />
+                </div>
+
+                <div className="flex justify-center items-center w-full h-1/2 sm:h-full">
+                    <h1 className="text-white text-center font-bold text-3xl sm:text-5xl">
+                      These are my Technical Skills
+                    </h1>
+                </div>
+            </div>
+      </div>
+
+      <div id="contact" className="w-full h-auto mt-10">
+            <Contact />
       </div>
     </main>
   );
