@@ -4,12 +4,12 @@ const works = [
   {
     title: "Authentication",
     description:
-      "I can build secure authentication systems using JWT, bcrypt, and session management. This includes login, signup, password resets, and role-based access.",
+      "I can build secure authentication systems using JWT, bcrypt, and session management. This includes login, signup, password resets, and signup by Google role-based access.",
   },
   {
     title: "REST-Full APIs",
     description:
-      "I can design and develop scalable REST APIs with Express.js and Node.js, enabling seamless communication between frontend and backend.",
+      "I can design and develop scalable REST APIs with Express.js, Node.js & Django, enabling seamless communication between frontend and backend.",
   },
     {
     title: "Socket IO",
@@ -19,17 +19,17 @@ const works = [
   {
     title: "Database Management",
     description:
-      "I can design schemas, optimize queries, and manage data efficiently using MongoDB with Mongoose for both structured and unstructured data.",
+      "I can design schemas, optimize queries, and manage data efficiently using MongoDB & SQL for both structured and unstructured data.",
   },
   {
     title: "Frontend Development",
     description:
-      "I create responsive and interactive UIs using React and Tailwind CSS, focusing on user experience and performance optimization.",
+      "I create responsive and interactive UIs using React, Tailwind CSS, Html & CSS, JavaScript and TypeScript, focusing on user experience and performance optimization.",
   },
   {
     title: "Deployment",
     description:
-      "I can deploy full-stack MERN apps to cloud platforms like Vercel, Render, MongoDB Clusters and, ensuring CI/CD and scalability.",
+      "I can deploy full-stack apps to cloud platforms like Vercel, Render, MongoDB Clusters and, ensuring CI/CD and scalability.",
   },
     {
     title: "UX/UI Designer",
