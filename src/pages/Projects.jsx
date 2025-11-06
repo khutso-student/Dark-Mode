@@ -139,7 +139,7 @@ export default function Projects() {
                 image={Que}
                 title="QueueCare"
                 demoLink="https://queue-care-swart.vercel.app/"
-                githubLink="https://github.com/khutso-student?tab=repositories"
+                githubLink="https://github.com/khutso-student/QueueCare"
                 category="Software"
                 tools={["React","JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"]}
                 index="01"
@@ -148,7 +148,7 @@ export default function Projects() {
                 image={QueFiling}
                 title="QueueCare Filing"
                 demoLink="https://queue-care-filing.vercel.app/"
-                githubLink="https://github.com/khutso-student?tab=repositories"
+                githubLink="https://github.com/khutso-student/QueueCareFiling"
                 category="Software"
                 tools={["React", "JavaScript", "Tailwind CSS", "Node.js","Express.js", "MongoDB"]}
                 index="02"
@@ -157,7 +157,7 @@ export default function Projects() {
                 image={Vibe}
                 title="VibeConnect"
                 demoLink="https://vibeconnect-seven.vercel.app/"
-                githubLink="https://github.com/khutso-student?tab=repositories"
+                githubLink="https://github.com/khutso-student/vibeconnect"
                 category="Software"
                 tools={["React","JavaScript","Tailwing CSS", "Socket.io", "Express","Nodde.js", "MongoDB"]}
                 index="03"
@@ -167,7 +167,7 @@ export default function Projects() {
                 image={ClipDrop}
                 title="ClipDrop"
                 demoLink="https://clip-drop.vercel.app/"
-                githubLink="https://github.com/khutso-student?tab=repositories"
+                githubLink="https://github.com/khutso-student/ClipDrop"
                 category="Software"
                 tools={["React","TypeScrip","Tailwing CSS", "Express","Nodde.js", "MongoDB"]}
                 index="04"
@@ -177,7 +177,7 @@ export default function Projects() {
                 image={worksync}
                 title="WorkSync"
                 demoLink="https://work-sync-nine.vercel.app/"
-                githubLink="https://github.com/khutso-student?tab=repositories"
+                githubLink="https://github.com/khutso-student/WorkSync"
                 category="Software"
                 tools={["React","JavaScript", "Express.js", "Socket.io", "Node.js", "Tailwind CSS", "MongoDB"]}
                 index="05"
@@ -186,7 +186,7 @@ export default function Projects() {
                 image={WisePrice}
                 title="Wise ShopKeeper"
                 demoLink="https://price-wise-shopkeeper.vercel.app/"
-                githubLink="https://github.com/khutso-student?tab=repositories"
+                githubLink="https://github.com/khutso-student/price-wise-shopkeeper"
                 category="Software"
                 tools={["React","TypeScript", "Supabase", "AI APIs","HTML", "CSS"]}
                 index="06"
