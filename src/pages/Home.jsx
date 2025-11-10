@@ -176,7 +176,7 @@ export default function Main() {
       </div>
 
       {/* Stats Section */}
-      <div className="w-full h-auto bg-gradient-to-b from-[#1b161675] to-[#000000de]">
+      <div className="w-full h-auto bg-gradient-to-b from-[#1b161657] to-[#00000041]">
         <YearCard />
       </div>
 
@@ -197,7 +197,7 @@ export default function Main() {
         <Skills />
       </div>
 
-      <div id="projects" ref={sections[3].ref} className="w-full h-auto">
+      <div id="projects" ref={sections[3].ref} className="w-full h-auto mb-5">
         <Projects />
       </div>
 
