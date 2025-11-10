@@ -1,17 +1,54 @@
 import { MdOutlineDesignServices } from "react-icons/md";
 import { GoCodeSquare } from "react-icons/go";
 import { BsJournalCode } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 // ✅ Reusable Card Component
+
 function StatusCard({ Icon, color, title, description }) {
   return (
-    <div className="flex justify-center items-center w-full h-full p-2 sm:p-4">
-      <div className="flex flex-col justify-center gap-2 w-full rounded-2xl text-white bg-[#0E0E10] border border-[#6E6E6E] p-4 hover:scale-105 transition-transform duration-300">
-        <Icon className="text-5xl" style={{ color }} />
-        <h1 className="font-bold text-lg">{title}</h1>
-        <p className="text-sm text-gray-300 leading-relaxed">{description}</p>
-      </div>
-    </div>
+    <motion.div
+      className="flex justify-center items-center w-full h-full p-2 sm:p-4"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      <motion.div
+        className="flex flex-col justify-center gap-2 w-full rounded-2xl text-white bg-[#0E0E10] border border-[#6E6E6E] p-4 hover:scale-105 transition-transform duration-300"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.98 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+        >
+          <Icon className="text-5xl" style={{ color }} />
+        </motion.div>
+
+        <motion.h1
+          className="font-bold text-lg"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
+        >
+          {title}
+        </motion.h1>
+
+        <motion.p
+          className="text-sm text-gray-300 leading-relaxed"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
+        >
+          {description}
+        </motion.p>
+      </motion.div>
+    </motion.div>
   );
 }
 

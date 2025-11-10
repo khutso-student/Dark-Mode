@@ -1,5 +1,6 @@
 // src/components/StatCard.jsx
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const StatCard = ({ start = 0, end = 2, label, duration = 2000, delay = 60000 }) => {
   const [number, setNumber] = useState(start);
@@ -23,17 +24,36 @@ const StatCard = ({ start = 0, end = 2, label, duration = 2000, delay = 60000 })
   }, []);
 
   return (
-    <div className="flex flex-col text-white justify-center px-5 w-full h-32 gap-4 bg-[#0E0E10] border border-[#282828] rounded-lg shadow-lg">
-      <h1
+    <motion.div
+      className="flex flex-col text-white justify-center px-5 w-full h-32 gap-4 bg-[#0E0E10] border border-[#282828] rounded-lg shadow-lg"
+      initial={{ opacity: 0, y: 30, scale: 0.9 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{
+        duration: 0.6,
+        ease: "easeOut",
+      }}
+      viewport={{ once: true }}
+    >
+      <motion.h1
         className="text-4xl font-bold"
         style={{
           textShadow: "0 0 1px #ffffff, 0 0 8px rgba(255,255,255,0.4)",
         }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
       >
         {number}+
-      </h1>
-      <p className="text-sm text-gray-300">{label}</p>
-    </div>
+      </motion.h1>
+      <motion.p
+        className="text-sm text-gray-300"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+      >
+        {label}
+      </motion.p>
+    </motion.div>
   );
 };
 

@@ -1,12 +1,24 @@
 import { MdOutlineLocalPhone, MdOutlineMail, MdOutlineLocationOn } from "react-icons/md";
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 
 // 👇 Named export
 export function ContactInfoCard({ Icon, text }) {
   return (
-    <div className="flex justify-start sm:justify-center items-center gap-2 sm:gap-3 w-full sm:w-auto  h-auto p-2">
-      <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#0F0F11] border border-[#6E6E6E]">
+    <motion.div
+      className="flex justify-start sm:justify-center items-center gap-2 sm:gap-3 w-full sm:w-auto h-auto p-2"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      whileHover={{ scale: 1.03 }}
+      viewport={{ once: true }}
+    >
+      <motion.div
+        className="flex justify-center items-center w-10 h-10 rounded-full bg-[#0F0F11] border border-[#6E6E6E]"
+        whileHover={{ rotate: 5, scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 200 }}
+      >
         <Icon
           className="text-[#D5D5D5] text-xl transition-all duration-300"
           style={{
@@ -14,23 +26,41 @@ export function ContactInfoCard({ Icon, text }) {
               "drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 3px rgba(255,255,255,0.2))",
           }}
         />
-      </div>
-      <p className="text-[#D5D5D5] text-sm sm:text-md">{text}</p>
-    </div>
+      </motion.div>
+
+      <motion.p
+        className="text-[#D5D5D5] text-sm sm:text-md"
+        initial={{ opacity: 0, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+      >
+        {text}
+      </motion.p>
+    </motion.div>
   );
 }
 
+// 👇 IconCard with motion
 const IconCard = ({ icon: Icon, link }) => {
   return (
-    <div className="flex justify-center items-center text-[#D5D5D5] w-8  h-8 p-2  rounded-full bg-[#0E0E10] border border-[#868686] transition-all duration-300 hover:shadow-[0_0_10px_#ffffff50] hover:scale-105">
+    <motion.div
+      className="flex justify-center items-center text-[#D5D5D5] w-8 h-8 p-2 rounded-full bg-[#0E0E10] border border-[#868686] transition-all duration-300 hover:shadow-[0_0_10px_#ffffff50]"
+      whileHover={{ scale: 1.15, rotate: 5 }}
+      whileTap={{ scale: 0.9 }}
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center items-center text-xs sm:text-md"
-         style={{
-                                filter: "drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 6px rgba(255,255,255,0.1))",
-                            }}
+        style={{
+          filter:
+            "drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 6px rgba(255,255,255,0.1))",
+        }}
       >
         <Icon
           className="text-lg transition-all duration-300"
@@ -39,7 +69,7 @@ const IconCard = ({ icon: Icon, link }) => {
           }}
         />
       </a>
-    </div>
+    </motion.div>
   );
 };
 
