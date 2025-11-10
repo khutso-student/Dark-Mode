@@ -91,8 +91,8 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState("projects");
 
   return (
-    <div className="flex justify-center items-center w-full pt-20 pb-10 px-3">
-      <div className="flex flex-col w-full max-w-6xl">
+    <div className="flex justify-center items-center w-full pt-20 pb-10 px-2 sm:px-6 ">
+      <div className="flex flex-col w-full ">
         {/* Heading */}
       <p className="text-[#11DAD1] font-bold tracking-widest flex justify-center sm:justify-start">
         MY SKILLS
@@ -126,11 +126,11 @@ export default function Projects() {
         </div>
 
         {/* Content Section */}
-        <div className="w-full">
+        <div className="w-full ">
             
           {activeTab === "projects" && (
             <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 z-1 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 z-1 gap-3"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6 }}

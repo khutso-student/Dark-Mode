@@ -5,8 +5,8 @@ import { BsJournalCode } from "react-icons/bs";
 // ✅ Reusable Card Component
 function StatusCard({ Icon, color, title, description }) {
   return (
-    <div className="flex justify-center items-center w-full h-full p-4">
-      <div className="flex flex-col justify-center gap-2 w-100 rounded-2xl text-white bg-[#0E0E10] border border-[#6E6E6E] p-4 hover:scale-105 transition-transform duration-300">
+    <div className="flex justify-center items-center w-full h-full p-2 sm:p-4">
+      <div className="flex flex-col justify-center gap-2 w-full rounded-2xl text-white bg-[#0E0E10] border border-[#6E6E6E] p-4 hover:scale-105 transition-transform duration-300">
         <Icon className="text-5xl" style={{ color }} />
         <h1 className="font-bold text-lg">{title}</h1>
         <p className="text-sm text-gray-300 leading-relaxed">{description}</p>
