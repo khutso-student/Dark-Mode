@@ -14,6 +14,7 @@ import Adidas from "../assets/Adidas.png";
 import Meetify from "../assets/Meetify.png";
 import Jays from "../assets/Jays.png";
 import VibeConnect from "../assets/VibeConnect.png";
+import FetchMate from '../assets/FetchMate.png';
 
 // ✅ Design Card Component
 const DesignCard = ({ image, title, subtitle, tools = [] }) => {
@@ -164,6 +165,7 @@ export default function Design() {
               <DesignCard image={Meetify} title="Meetify" subtitle="Software" tools={["Figma", "UI Design", "WireFrame"]} />
               <DesignCard image={Jays} title="Jays Electronics" subtitle="Ecommerce" tools={["Figma", "Material Designs", "Brand Colors"]} />
               <DesignCard image={VibeConnect} title="VibeConnect" subtitle="Software Design" tools={["Figma", "Prototype", "Dark Mode UI"]} />
+              <DesignCard image={FetchMate} title="FetchMate" subtitle="Software Design" tools={["Figma", "User Flow", "Dark Theme", "UX Reserach"]} />
             </div>
           </div>
 

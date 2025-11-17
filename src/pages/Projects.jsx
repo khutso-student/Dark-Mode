@@ -10,7 +10,7 @@ import QueFiling from "../assets/QueFiling.png";
 import WisePrice from "../assets/WisePrice.png";
 import SmartBiz from "../assets/SmartBiz.png";
 import Vibe from "../assets/Vibe.png";
-import ClipDrop from '../assets/ClipDrop.png';
+import FetchMateBG from '../assets/FetchMateBG.png';
 
 // ✅ Project Card Component (No TypeScript)
 const ProjectCard = ({ image, title, demoLink, githubLink, category, index, tools = [] }) => {
@@ -164,12 +164,12 @@ export default function Projects() {
               />
 
               <ProjectCard
-                image={ClipDrop}
-                title="ClipDrop"
-                demoLink="https://clip-drop.vercel.app/"
-                githubLink="https://github.com/khutso-student/ClipDrop"
+                image={FetchMateBG}
+                title="FetchMate"
+                demoLink="https://fetch-mate-dusky.vercel.app/"
+                githubLink="https://github.com/khutso-student/FetchMate"
                 category="Software"
-                tools={["React","TypeScrip","Tailwing CSS", "Express","Nodde.js", "MongoDB"]}
+                tools={["React","JavaScript","Tailwing CSS", "Django","PostgreSQL", "SQLIte", "yt-dlp"]}
                 index="04"
               />
 
