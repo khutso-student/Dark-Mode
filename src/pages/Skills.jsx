@@ -7,6 +7,7 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { DiMysql, DiDjango } from "react-icons/di";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function Skills() {
   const scrollRef = useRef(null);
@@ -22,6 +23,7 @@ export default function Skills() {
     { icon: <FaCss3Alt className="text-[#2965F1] text-8xl" />, name: "CSS3", desc: "Styles and animates layouts." },
     { icon: <RiJavascriptLine className="text-[#F0DB4F] text-8xl" />, name: "JavaScript", desc: "Adds interactivity and logic." },
     { icon: <TbBrandTypescript className="text-[#007ACC] text-8xl" />, name: "TypeScript", desc: "Strongly-typed JavaScript." },
+    { icon: <BiLogoPostgresql className="text-[#336791] text-8xl" />, name: "PostgreSQL", desc: "Database design, CRUD operations, and query optimization." },
     { icon: <DiMysql className="text-[#00758F] text-8xl" />, name: "MySQL", desc: "Relational database management." },
     { icon: <MdOutlineDesignServices className="text-[#DA0E9D] text-8xl" />, name: "UX/UI Design", desc: "Designs user-centered experiences." },
   ];
