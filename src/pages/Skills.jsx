@@ -8,6 +8,7 @@ import { DiMysql, DiDjango } from "react-icons/di";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function Skills() {
   const scrollRef = useRef(null);
@@ -21,6 +22,7 @@ export default function Skills() {
     { icon: <DiDjango className="text-[#0ECF76] text-8xl" />, name: "Django", desc: "Python framework for robust backends." },
     { icon: <FaHtml5 className="text-[#E34C26] text-8xl" />, name: "HTML5", desc: "Structures web pages semantically." },
     { icon: <FaCss3Alt className="text-[#2965F1] text-8xl" />, name: "CSS3", desc: "Styles and animates layouts." },
+    { icon: <RiTailwindCssFill className="text-[#11DAD1] text-8xl" />, name: "Tailwingcss", desc: "Builds responsive, modern, and animated layouts quickly." },
     { icon: <RiJavascriptLine className="text-[#F0DB4F] text-8xl" />, name: "JavaScript", desc: "Adds interactivity and logic." },
     { icon: <TbBrandTypescript className="text-[#007ACC] text-8xl" />, name: "TypeScript", desc: "Strongly-typed JavaScript." },
     { icon: <BiLogoPostgresql className="text-[#336791] text-8xl" />, name: "PostgreSQL", desc: "Database design, CRUD operations, and query optimization." },

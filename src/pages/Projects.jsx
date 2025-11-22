@@ -95,10 +95,10 @@ export default function Projects() {
       <div className="flex flex-col w-full ">
         {/* Heading */}
       <p className="text-[#11DAD1] font-bold tracking-widest flex justify-center sm:justify-start">
-        MY SKILLS
+        MY PROJECTS
       </p>
       <h1 className="text-3xl text-center sm:text-4xl text-white font-extrabold flex justify-center sm:justify-start mb-4">
-        MY CONTRIBUTION & KEY SKILLS
+        MY LATEST PROJECTS
       </h1>
 
         {/* Tabs */}
